@@ -11,11 +11,11 @@ public class PlayerController : MonoBehaviour
     private float _moveSpeed = 2f;
 
     [SerializeField, Header("ジャンプ力")]
-    private float _JumpForce = 5f;
+    private float _JumpForce = 20f;
     private Vector2 _InputDirection;
 
     private Animator _PlayerAnimation;
-    public bool _BoolJump;
+    private bool _BoolJump;
 
     // Start is called before the first frame update
     void Start()
@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
     {
         if(!callbackContext.performed || _BoolJump) return;
     
-        _PlayerRigidbody.AddForce(Vector2.up * _JumpForce, ForceMode2D.Impulse);
+        _PlayerRigidbody.AddForce(Vector2.up * _JumpForce, ForceMode2D.Impulse );
         _BoolJump = true;
     }
 

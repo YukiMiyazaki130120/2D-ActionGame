@@ -70,3 +70,8 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# /[Aa]ssets/Pixel Adventure 1/
+/[Aa]ssets/Font/
+# /[Aa]ssets/TextMesh Pro/
+# /[Aa]ssets/Free 2D Cartoon Parallax Background/
